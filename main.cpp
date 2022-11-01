@@ -40,7 +40,7 @@ int main() {
 
 
     // Save the result of opening the file
-    rc = sqlite3_open("/Users/matildetarchi/CLionProjects/untitled7/prova.db", &db);
+    rc = sqlite3_open("/Users/andrealipperi/CLionProjects/untitled7/prova.db", &db);
 
     if( rc ){
         // Show an error message
@@ -50,8 +50,8 @@ int main() {
         // Return an error
         return(1);
     }
-    sql = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10001','Porco', 'Dio');";
-    sql = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10004','matilde', 'tarchi');";
+    //sql = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10001','Porco', 'Dio');";
+    sql = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10005','andrera', 'iouoi');";
 
 
     // Run the SQL (convert the string to a C-String with c_str() )
