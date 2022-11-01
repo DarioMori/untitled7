@@ -37,6 +37,7 @@ int main() {
 
     // Save any SQL
     string sql;
+    string sql1;
 
     // Save the result of opening the file
     rc = sqlite3_open("/Users/matildetarchi/CLionProjects/untitled7/prova.db", &db);
@@ -50,7 +51,8 @@ int main() {
         return(1);
     }
     sql = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10001','Porco', 'Dio');";
-    sql = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10002','mati', 'tarchi');";
+    sql1 = "INSERT INTO suca ('ID', 'Name', 'Address') VALUES ('10003','mati', 'tarchi');";
+
 
     // Run the SQL (convert the string to a C-String with c_str() )
     rc = sqlite3_exec(db, sql.c_str(), callback, 0, &zErrMsg);
